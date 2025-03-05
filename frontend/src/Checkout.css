@@ -1,0 +1,138 @@
+/* Overall Layout */
+.checkout-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  /* Left Section: Order Summary & Payment */
+  .checkout-left {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right Section: Billing Details */
+  .checkout-right {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Two Fields Side by Side */
+  .input-group {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .input-group div {
+    flex: 1;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    margin-bottom: 20px;
+  }
+  
+  .order-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .order-details .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Payment Section */
+  .payment-section {
+    margin-top: 20px;
+  }
+  
+  .privacy-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .privacy-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .privacy-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .place-order-button,
+  .back-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .place-order-button {
+    background: #28a745;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .back-button {
+    background: #6c757d;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .checkout-container {
+      flex-direction: column;
+    }
+  
+    .input-group {
+      flex-direction: column;
+    }
+  }
+  

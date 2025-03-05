@@ -1,0 +1,213 @@
+.hello-container {
+  font-family: "League Spartan", sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Header Section */
+.hello-header h1 {
+  color: orange;
+  font-size: 4rem;
+}
+
+.hello-header p {
+  color: #2d7d32;
+  font-size: 2rem;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Categories Section */
+.categories-section {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: "League Spartan", sans-serif;
+  color: orange;
+}
+
+/* Flexbox for Three Columns */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual Category Box */
+.category {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  background-color: white; /* Default background */
+  
+}
+
+/* Hover Effect - Background Turns Orange */
+.category:hover {
+  background-color: orange;
+  color: white; /* Change text color */
+}
+
+/* Category Image */
+.category img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Category Title */
+.category h3 {
+  font-size: 2rem;
+  color: orange;
+  margin-top: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Category Description */
+.category p {
+  font-size: 1.2rem;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change Text Color on Hover */
+.category:hover h3, .category:hover p {
+  color: white;
+}
+
+/* Specific Text Movement for Each Section */
+.categories .category:nth-child(1):hover h3, 
+.categories .category:nth-child(1):hover p { 
+  transform: scale(1.4) ; /* Left section text moves right */
+}
+
+.categories .category:nth-child(2):hover h3, 
+.categories .category:nth-child(2):hover p { 
+  transform: scale(1.4) ; /* Center section text moves right */
+}
+
+.categories .category:nth-child(3):hover h3, 
+.categories .category:nth-child(3):hover p { 
+  transform: scale(1.4) ; /* Right section text moves left */
+}
+
+/* Back Button */
+.back-button {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: darkgreen;
+}
+
+    
+
+
+
+
+
+
+.next-section {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.next-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+/* Sales Section */
+.sales {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.sales img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Sales Text Overlay */
+.sales-text {
+  position: absolute;
+  top: -10%; /* Adjusted to move text slightly up */
+  left: 5%; /* Adjusted to move text to the top-left */
+  text-align: left; /* Align text to the left */
+  color: white;
+}
+
+/* Adjusted SALE IS ON Text */
+.sales-text h2 {
+  font-size: 12rem;
+  font-weight: bold;
+  color: orange;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px; /* Adds spacing between text and button */
+}
+
+/* Shop Now Button - Moved Down */
+.shop-now-button {
+  margin-top: 20px; /* Increased spacing */
+  padding: 15px 30px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block; /* Keeps it aligned properly */
+}
+
+.shop-now-button:hover {
+  background-color: white;
+  color: orange;
+}
+
+
+
+
+
+.back-button{
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+/* Hover Effect: Turns Green */
+.back-button:hover {
+  background: green; /* Changes to green on hover */
+}
